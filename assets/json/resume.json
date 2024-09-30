@@ -6,20 +6,10 @@
     "email": "aaronthach09@gmail.com",
     "phone": "",
     "url": "https://aaronthach.github.io",
-    "summary": "A graduate from Emory University",
+    "summary": "A graduate from Emory University interested in tech innovation, software engineering, and product management",
     "location": {
-      "address": "2712 Broadway St",
-      "postalCode": "CA 94115",
-      "city": "San Francisco",
-      "countryCode": "US",
-      "region": "California"
     },
     "profiles": [
-      {
-        "network": "Twitter",
-        "username": "AlbertEinstein",
-        "url": "https://twitter.com/AlbertEinstein"
-      }
     ]
   },
   "work": [
