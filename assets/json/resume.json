@@ -1,12 +1,12 @@
 {
   "basics": {
-    "name": "Albert Einstein",
-    "label": "Scientist",
+    "name": "Aaron Thach",
+    "label": "Backend Software Engineer",
     "image": "",
-    "email": "albert@einstein.de",
-    "phone": "(912) 123-4567",
-    "url": "https://alshedivat.github.io/al-folio/",
-    "summary": "A German-born theoretical physicist, widely ranked among the greatest and most influential scientists of all time",
+    "email": "aaronthach09@gmail.com",
+    "phone": "",
+    "url": "https://aaronthach.github.io",
+    "summary": "A graduate from Emory University",
     "location": {
       "address": "2712 Broadway St",
       "postalCode": "CA 94115",
