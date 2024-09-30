@@ -1404,19 +1404,8 @@ div.modal .btn-group > .btn:first-child:hover {
 }
 
 div.modal > button,
-div.modal-footer > button {
-  background: #2f2f2f;
-  background-color: #2f2f2f;
-  border-color: #2f2f2f;
-}
 
 div.modal > button:hover,
-div.modal-footer > button:hover {
-  background: #2a2a2a;
-  background-color: #2a2a2a;
-  border-color: #2a2a2a;
-  transition: 200ms ease;
-}
 
 .modal-content {
   font-family: sans-serif;
@@ -1454,12 +1443,6 @@ div.modal-footer > button:hover {
   padding: 15px;
 }
 
-.modal-footer {
-  padding: 8px;
-  text-align: right;
-  background-color: #232323;
-  border-top: none;
-}
 
 .alert-info {
   background-color: #2f2f2f;
