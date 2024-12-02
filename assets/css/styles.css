@@ -22,8 +22,9 @@
   --primary-color: #31572c;
   --text-color: #6c584c;
   --secondary-color: #adc178;
-  --primary-shadow: #8b8eaf;
-  --secondary-shadow: #a17a69;
+  --primary-shadow: #6c584c;
+  --secondary-shadow: #a98467;
+  --textbox-color: #fffbec;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
@@ -39,11 +40,17 @@ html, nav, .hero, .more-about, .projects, .project-card, .input-field, footer {
   --text-color: #eef4ed;
   --secondary-color: #134074;
   --primary-shadow: #131313;
-  --secondary-shadow: #383e56;
+  --secondary-shadow: #8da9c4;
+  --textbox-color: #eef4ed;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
   --line-height: 1.7rem;
 }
+
+:root[data-theme="dark"] .hero-img {
+  content: url("../images/hikingPic.jpg");
+}
+
 
 html {
   scroll-behavior: smooth;
@@ -332,7 +339,7 @@ nav ul li {
 
 .input-field {
   padding: 0.5rem;
-  background-color: #eef4ed;
+  background-color: var(--textbox-color);
 }
 
 .submit-btn {
@@ -387,7 +394,7 @@ footer {
   height: 3rem;
 }
 
-@media screen and (max-width: 1284px) {
+@media screen and (max-width: 1300px) {
   /*changes reflects on screen with a width of 1284 px and below*/
   nav {
     padding: 1.5rem 1rem;
