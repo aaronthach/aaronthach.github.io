@@ -169,6 +169,11 @@ nav ul li {
   max-width: 30rem;
   border-radius: 50%;
   object-fit: cover;
+  transition: transform 0.4s ease-in-out;
+}
+
+.hero img:hover {
+  transform: scale(1.1);
 }
 
 .bio-title {
@@ -232,6 +237,7 @@ nav ul li {
 .icon {
   width: 11.875rem;
   height: 11.25rem;
+  transition: transform 0.3s ease-in-out;
 }
 
 .icon-card {
@@ -240,6 +246,11 @@ nav ul li {
   box-shadow: 0 3px 10px var(--secondary-shadow);
   padding: 20px;
   margin: 10px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
 
 .projects {
@@ -290,6 +301,10 @@ nav ul li {
   box-shadow: 0 3px 10px var(--secondary-shadow);
   padding: 20px;
   margin: 10px;
+}
+
+.project-card:hover {
+  transform: scale(1.1);
 }
 
 .contact-title {
