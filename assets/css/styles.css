@@ -18,10 +18,10 @@
 :root {
   --font-family: 'Satoshi', sans-serif;
   --bold-font: 'Satoshi-Bold', sans-serif;
-  --bg-color: #fcfcfc;
-  --primary-color: #005f31;
-  --text-color: #4e4e4e;
-  --secondary-color: #ff7235;
+  --bg-color: #eef4ed;
+  --primary-color: #134074;
+  --text-color: #0b2545;
+  --secondary-color: #8da9c4;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
@@ -34,10 +34,10 @@ html, nav, .hero, .more-about, .projects, .project-card, .input-field, footer {
 }
 
 :root[data-theme="dark"] {
-  --bg-color: #1e1e2f;
-  --primary-color: #2e7efe;
-  --text-color: #72a8ff;
-  --secondary-color: #ffb86c;
+  --bg-color: #0b2545;
+  --primary-color: #8da9c4;
+  --text-color: #eef4ed;
+  --secondary-color: #134074;
   --primary-shadow: #131313;
   --secondary-shadow: #383e56;
   --bottom-margin: 0.5rem;
@@ -332,7 +332,7 @@ nav ul li {
 
 .input-field {
   padding: 0.5rem;
-  background-color: var(--bg-color);
+  background-color: #eef4ed;
 }
 
 .submit-btn {
@@ -344,7 +344,6 @@ nav ul li {
   border-radius: 5px;
   font-size: 1rem;
   font-family: var(--bold-font);
-  transition: var(--transition);
   color: var(--bg-color);
 }
 
@@ -388,8 +387,8 @@ footer {
   height: 3rem;
 }
 
-@media screen and (max-width: 720px) {
-  /*changes reflects on screen with a width of 720 px and below*/
+@media screen and (max-width: 1284px) {
+  /*changes reflects on screen with a width of 1284 px and below*/
   nav {
     padding: 1.5rem 1rem;
   }
