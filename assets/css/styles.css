@@ -8,8 +8,8 @@
 
 @font-face {
   font-family: 'Satoshi-Bold';
-  src: url('../fonts/Satoshi-Black.woff') format('woff'),
-       url('../fonts/Satoshi-Black.woff2') format('woff2');
+  src: url('../fonts/Satoshi-Bold.woff') format('woff'),
+       url('../fonts/Satoshi-Bold.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -18,10 +18,10 @@
 :root {
   --font-family: 'Satoshi', sans-serif;
   --bold-font: 'Satoshi-Bold', sans-serif;
-  --bg-color: #eef4ed;
-  --primary-color: #134074;
-  --text-color: #0b2545;
-  --secondary-color: #8da9c4;
+  --bg-color: #f0ead2;
+  --primary-color: #31572c;
+  --text-color: #6c584c;
+  --secondary-color: #adc178;
   --primary-shadow: #8b8eaf;
   --secondary-shadow: #a17a69;
   --bottom-margin: 0.5rem;
