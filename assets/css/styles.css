@@ -68,6 +68,7 @@ a {
 }
 
 a:hover {
+  font-size: 1.25rem;
   text-decoration: none;
   color: var(--secondary-color);
 }
@@ -404,10 +405,33 @@ footer {
     text-align: center;
     transform: translateX(120%);
     transition: transform 0.5s ease-in;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 10px 10px;
   }
 
   nav ul li{
-    margin: 8px;
+    margin: 0;
+    padding-bottom: 1.75rem;
+    border-bottom: 1px solid var(--secondary-shadow);
+  }
+
+  nav ul li:last-child {
+    padding-bottom: 2rem;
+    border-bottom: none;
+  }
+
+  nav ul li a {
+    font-size: 1.2rem;
+    font-weight: var(--bold-font);
+    color: var(--primary-color);
+  }
+
+  nav ul li a:hover {
+    background-color: var(--primary-color);
+    color: var(--bg-color);
+    border-radius: 5px;
+    padding: 0.8rem 1.2rem;
+    transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
   }
 
   .burger-menu {
@@ -436,6 +460,7 @@ footer {
   .more-about {
     margin-top: 2rem;
     padding: 1rem 3.5rem;
+    max-width: 90%;
   }
 
   .more-about h2 {
@@ -483,5 +508,5 @@ footer {
 }
 
 section {
-  scroll-margin-top: 80px; /* Replace 60px with the height of your navbar */
+  scroll-margin-top: 80px; /* to account for navbar size */
 }
