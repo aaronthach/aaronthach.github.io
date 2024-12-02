@@ -498,6 +498,10 @@ footer {
     width: 18.3rem;
   }
 
+  .more-about {
+    max-width: 90%;
+  }
+
   .project-container {
     width: 17.875rem;
   }
