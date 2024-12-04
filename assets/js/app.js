@@ -48,3 +48,5 @@ document.addEventListener("DOMContentLoaded", () => {
         themeIcon.textContent = newTheme === "dark" ? "🌙" : "☀️";
     });
 });
+
+// STOP TRANSITIONS WHEN CLICKING NAV BUTTONS, MAINTAIN THEME
