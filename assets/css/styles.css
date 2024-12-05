@@ -30,7 +30,7 @@
   --line-height: 1.7rem;
 }
 
-html, nav, .hero, .more-about, .projects, .project-card, .input-field, footer {
+html, nav, .hero, #more-about, #projects, .project-card, .input-field, footer {
   transition: background-color 0.5s, color 0.5s, all 0.5s ease-in-out;
 }
 
