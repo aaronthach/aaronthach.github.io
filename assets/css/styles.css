@@ -527,7 +527,7 @@ footer {
   }
 
   .more-about {
-    margin-top: 2rem;
+    margin-top: 5rem;
     padding: 1rem 3.5rem;
     max-width: 100%;
   }
@@ -538,11 +538,20 @@ footer {
 
   .more-about p {
     text-align: justify;
+    max-width: 95%;
+  }
+
+  .skills {
+    min-height: 60vh;
   }
 
   .icon {
     width: 5.875rem;
     height: 5.25rem;
+  }
+
+  .projects {
+    margin-bottom: 5rem;
   }
 
   .projects-container {
