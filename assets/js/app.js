@@ -1,4 +1,4 @@
-// scroll to top functionality
+// Scroll to top functionality
 const scrollUp = document.querySelector("#scroll-up");
 
 scrollUp.addEventListener("click", () => {
@@ -16,10 +16,9 @@ const nav = document.querySelector("nav");
 
 burger.addEventListener("click", () => {
     ul.classList.toggle("show");
-})
+});
 
 // Close hamburger menu when a link is clicked
-//Select nav links
 const navLink = document.querySelectorAll(".nav-link");
 
 navLink.forEach((link) =>
@@ -29,6 +28,7 @@ navLink.forEach((link) =>
 );
 
 document.addEventListener("DOMContentLoaded", () => {
+    // Theme toggle functionality
     const themeToggle = document.getElementById("theme-toggle");
     const themeIcon = document.getElementById("theme-icon");
 
@@ -47,6 +47,103 @@ document.addEventListener("DOMContentLoaded", () => {
 
         themeIcon.textContent = newTheme === "dark" ? "🌙" : "☀️";
     });
-});
 
-// STOP TRANSITIONS WHEN CLICKING NAV BUTTONS, MAINTAIN THEME
+    // Hero section scroll animation
+    const heroSection = document.querySelector(".hero");
+    const moreAboutSection = document.querySelector(".more-about");
+    const skillsSection = document.querySelector(".skills");
+    const projectsSection = document.querySelector(".projects");
+    const contactSection = document.querySelector(".contact");
+
+    window.addEventListener("scroll", () => {
+        // Trigger fade-in for the "Hero" section
+        const heroObserver = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    // Add the 'visible' class to trigger the fade-in animation
+                    heroSection.classList.add("visible");
+                } else {
+                    heroSection.classList.remove("visible");
+                }
+            },
+            {
+                threshold: 1, // Trigger when 10% of the section is visible
+            }
+        );
+
+        // Observe the "Hero" section
+        heroObserver.observe(heroSection);
+
+        // Trigger fade-in for the "More About" section
+        const moreAboutObserver = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    // Add the 'visible' class to trigger the fade-in animation
+                    moreAboutSection.classList.add("visible");
+                } else {
+                    moreAboutSection.classList.remove("visible");
+                }
+            },
+            {
+                threshold: 0.5, // Trigger when 10% of the section is visible
+            }
+        );
+
+        // Observe the "More About" section
+        moreAboutObserver.observe(moreAboutSection);
+
+        // Trigger fade-in for the "Skills" section
+        const skillsObserver = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    // Add the 'visible' class to trigger the fade-in animation
+                    skillsSection.classList.add("visible");
+                } else {
+                    skillsSection.classList.remove("visible");
+                }
+            },
+            {
+                threshold: 0.5, // Trigger when 10% of the section is visible
+            }
+        );
+
+        // Observe the "Skills" section
+        skillsObserver.observe(skillsSection);
+
+        // Trigger fade-in for the "Projects" section
+        const projectsObserver = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    // Add the 'visible' class to trigger the fade-in animation
+                    projectsSection.classList.add("visible");
+                } else {
+                    projectsSection.classList.remove("visible");
+                }
+            },
+            {
+                threshold: 0.5, // Trigger when 10% of the section is visible
+            }
+        );
+
+        // Observe the "Projects" section
+        projectsObserver.observe(projectsSection);
+
+        // Trigger fade-in for the "Contact" section
+        const contactObserver = new IntersectionObserver(
+            ([entry]) => {
+                if (entry.isIntersecting) {
+                    // Add the 'visible' class to trigger the fade-in animation
+                    contactSection.classList.add("visible");
+                } else {
+                    contactSection.classList.remove("visible");
+                }
+            },
+            {
+                threshold: 0.5, // Trigger when 10% of the section is visible
+            }
+        );
+
+        // Observe the "Contact" section
+        contactObserver.observe(contactSection);
+    });
+});
