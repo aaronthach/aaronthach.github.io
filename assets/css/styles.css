@@ -355,7 +355,7 @@ nav ul li {
   border-radius: 11px;
   color: var(--bg-color);
   padding: 20px;
-  margin: 1rem;
+  margin: 0.5rem;
 }
 
 .project-btn {
