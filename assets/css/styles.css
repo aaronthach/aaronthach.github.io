@@ -173,10 +173,7 @@ nav ul li {
   height: auto;
   width: 100%;
   max-width: 17rem;
-  border-radius: 10%;
-  border-style: solid;
-  border-width: 10px;
-  border-color: var(--text-color);
+  border-radius: 50%;
   object-fit: cover;
   transition: transform 0.4s ease-in-out;
 }
@@ -186,13 +183,13 @@ nav ul li {
 }
 
 .bio-title {
+  font-size: 3em;
   font-family: var(--bold-font);
   color: var(--primary-color);
 }
 
 .bio {
   width: 25rem;
-  padding: 0.625rem;
   border-radius: 6px;
   font-size: 1.3em;
 }
@@ -255,6 +252,7 @@ nav ul li {
 }
 
 .skill-header {
+  font-size: 2em;
   margin-bottom: 1rem;
   font-family: var(--bold-font);
   color: var(--primary-color);
@@ -315,6 +313,7 @@ nav ul li {
 }
 
 .projects-title {
+  font-size: 2em;
   text-align: center;
   margin-bottom: 1rem;
   font-family: var(--bold-font);
@@ -362,6 +361,7 @@ nav ul li {
 }
 
 .contact-title {
+  font-size: 2em;
   font-family: var(--bold-font);
   color: var(--primary-color);
 }
@@ -446,12 +446,18 @@ nav ul li {
   position: fixed;
   right: 1%;
   bottom: 50%;
+  
 }
 
 .socicon {
   width: 4rem;
   height: 4rem;
   border-radius: 40px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.socicon:hover {
+  transform: scale(1.1);
 }
 
 footer {
@@ -464,14 +470,6 @@ footer {
   width: 100%;
   z-index: 10;
   box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.1);
-}
-
-
-.scroll-up {
-  position: fixed;
-  right: 0.5%;
-  bottom: 3%;
-  cursor: pointer;
 }
 
 .up-arrow {
