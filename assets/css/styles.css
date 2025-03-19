@@ -400,7 +400,6 @@ nav ul li {
 }
 
 .contact-form-container textarea {
-  min-height: 6.25rem;
   font-size: 14px;
 }
 
@@ -419,6 +418,11 @@ nav ul li {
 .input-field {
   padding: 0.5rem;
   background-color: var(--textbox-color);
+}
+
+textarea {
+  height: 8rem;
+  resize: none;
 }
 
 .submit-btn {
@@ -441,12 +445,8 @@ nav ul li {
 }
 
 .socials {
-  display: flex;
-  flex-direction: column;
-  position: fixed;
-  right: 1%;
-  bottom: 50%;
-  
+  display: block;
+  text-align: center;
 }
 
 .socicon {
@@ -454,6 +454,7 @@ nav ul li {
   height: 4rem;
   border-radius: 40px;
   transition: transform 0.3s ease-in-out;
+  margin: 0em 1em 1.5em;
 }
 
 .socicon:hover {
@@ -597,16 +598,24 @@ footer {
 }
 
 @media screen and (max-width: 420px) {
+  .hero.visible {
+    margin-top: 0;
+  }
+
   .hero img {
-    max-width: 23rem;
+    max-width: 20rem;
   }
 
   .bio {
     width: 18.3rem;
   }
 
+  .bio-title {
+    font-size: 2.5rem;
+  }
+
   .more-about {
-    max-width: 95%;
+    padding: 1rem 2rem;
   }
 
   .project-container {
