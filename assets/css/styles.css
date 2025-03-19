@@ -25,7 +25,8 @@
   --primary-shadow: #6c584c;
   --secondary-shadow: #a98467;
   --textbox-color: #fffbec;
-  --project-btn-background: #6c584c;
+  --project-background: #6c584c;
+  --project-btn-background: #31572c;
   --project-btn-text: #f0ead2;
   --bottom-margin: 0.5rem;
   --bottom-margin-2: 1rem;
@@ -44,6 +45,7 @@ html, nav, .hero, #more-about, #projects, .project-card, .input-field, footer {
   --primary-shadow: #131313;
   --secondary-shadow: #8da9c4;
   --textbox-color: #eef4ed;
+  --project-background: #8da9c4;
   --project-btn-background: #134074;
   --project-btn-text: #eef4ed;
   --bottom-margin: 0.5rem;
@@ -324,6 +326,10 @@ nav ul li {
   color: var(--primary-color);
 }
 
+.project-title {
+  font-size: 1.5em;
+}
+
 .project-container {
   display: flex;
   flex-direction: column;
@@ -337,7 +343,7 @@ nav ul li {
 }
 
 .project-card {
-  background-color: var(--primary-color);
+  background-color: var(--project-background);
   border-radius: 11px;
   color: var(--bg-color);
   padding: 20px;
