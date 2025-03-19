@@ -346,12 +346,16 @@ nav ul li {
   box-sizing: border-box;
 }
 
+.project-details {
+  text-align: justify;
+}
+
 .project-card {
   background-color: var(--project-background);
   border-radius: 11px;
   color: var(--bg-color);
   padding: 20px;
-  margin: 10px;
+  margin: 1rem;
 }
 
 .project-btn {
